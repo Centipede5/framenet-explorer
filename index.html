@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        header video,html{min-height:100%}.list-group-item,header,header .container,html{position:relative}.card-header,.progress,header{overflow:hidden}body{font-family:"MS Sans Serif",Tahoma,Verdana,Segoe,sans-serif;background:teal;color:#fff;padding-bottom:28px}.bg-cloud{background-image:url(clouds2.jpg);color:#212529}a{color:#2d49eb}header{background-color:#000;height:100vh;min-height:25rem;width:100%}header video{position:absolute;top:50%;left:50%;min-width:100%;width:auto;height:auto;z-index:0;-ms-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)}header .container{z-index:2}::-webkit-scrollbar{width:12px}::-webkit-scrollbar-button:end:increment,::-webkit-scrollbar-button:start:decrement{display:block}::-webkit-scrollbar-button:vertical:end:decrement,::-webkit-scrollbar-button:vertical:start:increment{display:none}::-webkit-scrollbar-button:vertical:increment{width:18px;background:url(combo.png) 50% no-repeat silver;height:18px;margin:1px 1px 1px 10px;-webkit-transform:rotateX(-90deg);transform:rotateX(-90deg);-webkit-transform:rotateY(-90deg);transform:rotateY(-90deg);border:1px outset #fff;border-shadow:1px 1px #000}::-webkit-scrollbar-button:vertical:decrement{width:11px;background:url(comboup.png) 50% no-repeat silver;height:16px;margin:1px 1px 1px 10px;transform:rotateX(180deg);-webkit-transform:rotateY(180deg);border:1px outset #fff;border-shadow:1px 1px #000}::-webkit-scrollbar-track{background-image:url(background.bmp)}::-webkit-scrollbar-thumb:vertical{border:1px outset #fff;border-shadow:1px 1px #000;height:40px;background-color:silver}::-webkit-scrollbar-corner:vertical{background-color:#000}.btn,.btn:hover,.card,.list-group{background:silver}:-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment{display:block}::-webkit-scrollbar-button:horizontal:end:decrement,::-webkit-scrollbar-button:horizontal:start:increment{display:none}::-webkit-scrollbar-button:horizontal:increment{background:url(comboright.png) 50% no-repeat silver;-webkit-transform:rotateX(-90deg);transform:rotateX(-90deg);-webkit-transform:rotateY(-90deg);transform:rotateY(-90deg)}::-webkit-scrollbar-button:horizontal:decrement,::-webkit-scrollbar-button:horizontal:increment{width:18px;height:18px;margin:1px 1px 1px 10px;border:1px outset #fff;border-shadow:1px 1px #000}::-webkit-scrollbar-button:horizontal:decrement{background:url(comboleft.png) 50% no-repeat silver;transform:rotateX(180deg);-webkit-transform:rotateY(180deg)}::-webkit-scrollbar-track-piece{margin:1px}::-webkit-scrollbar-thumb:horizontal{border:1px outset #fff;border-shadow:1px 1px #000;height:40px;background-color:silver}.btn{border-width:2px;border-style:outset;border-color:buttonface #424242 #424242 buttonface;color:#000;padding:0 0 4px;border-radius:1px}.btn:hover{border:2px inset #fff;color:#424242;box-shadow:-1px -1px #000}.btn:active,.btn:focus{border:2px inset #fff!important;color:#424242;box-shadow:-1px -1px #000!important;outline:0!important;background:url(background.bmp)}.btn-primary{padding-left:8px;padding-right:8px}button:focus{outline:dotted 1px}.btn.disabled,.btn:disabled{cursor:default;background-color:silver;border-style:outset;border-color:buttonface #424242 #424242 buttonface;color:grey;text-shadow:1px 1px #fff}.card,.list-group{border:2px solid;border-color:#fff #424242 #424242 #fff;color:#212529}.card.square,.card.square .card-header{border-radius:0}.card.w95 .card-header{background:#08216b}.card-header{background:-webkit-linear-gradient(left,#08216b,#a5cef7);color:#fff;display:block;white-space:nowrap;text-overflow:ellipsis;padding-top:2px;padding-bottom:1px;text-align:left}.card-header.icon{padding-left:4px}.header-inactive{background:gray!important}.list-group-item{display:block;background:0 0;color:#212529}.list-group-item-primary{color:#fff;background:-webkit-linear-gradient(left,#08216b,#a5cef7)}.dropdown-item:hover,.list-group-item-action:hover{color:#08216b}.navbar-95{background:silver;margin:0;border:1px outset #fff;min-height:40px;padding:0 6px;color:#212529}.navbar-brand{color:#212529;padding:0 6px}.nav-link{text-decoration:none;display:inline-block;padding:0 9px;color:#212529}.dropdown-menu{display:none;min-width:119px;padding:0 0 2px;margin-left:12px;font-size:12px;list-style-type:none;background:silver;border:1.8px outset #fff;border-radius:0;-webkit-box-shadow:1.5px 1.5px #000;box-shadow:1.5px 1.5px #000}.dropdown-item{padding:1px 0 1px 2px}.navbar-light .navbar-toggler.collapsed .navbar-toggler-icon{width:32px;background:url(icons/directory_closed_cool-5.png)}.navbar-light .navbar-toggler .navbar-toggler-icon{width:32px;background:url(icons/directory_open_cool-5.png)}.navbar-toggler{width:auto}.taskbar{cursor:default;background-color:silver;margin:16px 0 0;padding:0 8px;border-top:2px outset #fff;z-index:228;width:100%;position:absolute;bottom:0}.taskbar .start-button{cursor:default;display:inline-block;border:1px outset #fff;padding:0 0 0 2px;box-shadow:1px 1px #000;margin-bottom:2px;font-size:14px}.form-95,.form-check-label::before{background:#fff;box-shadow:-1px -1px 0 0 #828282}.taskbar .time{color:#212529;margin-top:2px;text-align:right;font-size:14px;margin-right:0}#page-content{flex:1 0 auto}.icon-16{margin-bottom:2px;max-height:16px}.icon-16-4{margin-bottom:4px;max-height:16px}.form-95{width:100%;border:2px inset #d5d5d5;color:#424242;margin-top:4px;padding-left:2px}.bootstrap-select,[contenteditable].form-control:focus,[type=email].form-control:focus,[type=password].form-control:focus,[type=tel].form-control:focus,[type=text].form-control:focus,input.form-control:focus,input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=text]:focus,textarea.form-control:focus,textarea:focus{outline:0!important}input[type=checkbox],input[type=radio]{position:absolute;left:-9999px}.form-check-label::after,.form-check-label::before{content:'';position:absolute;top:0;left:0}.form-check-label{margin-left:6px}input[type=radio]+.form-check-label::after,input[type=radio]+.form-check-label::before{border-radius:50%}.form-check-label::before{height:20px;width:20px;top:3px;padding-right:2px;border:2px inset #d5d5d5}input[type=radio]+.form-check-label::after{display:none;width:8px;height:8px;margin:6px;top:3px;background:#000}input[type=checkbox]+.form-check-label::after{display:none;background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");width:12px;height:12px;margin:4px;top:3px}input:checked+.form-check-label::after{display:block}.progress{height:1rem;font-size:.75rem;background-color:silver;border-radius:0;border:1px inset #d5d5d5;color:#424242}.progress-bar{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;color:#fff;text-align:center;background-color:#1a0094;transition:width .6s}.progress-bar-blocks{background-image:linear-gradient(90deg,transparent 75%,#d5d5d5 25%);background-size:1rem 1rem}.tab-content{background:silver;border:2px solid;border-color:silver #424242 #424242 #fff;padding:1rem 1.4rem}.nav-tabs{border-bottom:2px solid #fff}.nav-tabs .nav-item{position:relative;margin-bottom:0;background:silver;color:#000;border-top-left-radius:4px;border-top-right-radius:4px;border-right:1px solid #5a5a5a;box-sizing:border-box}.nav-tabs .nav-item .nav-link{color:#000;padding:.2rem 1.8rem;box-sizing:border-box;transform:none}.nav-tabs .nav-item .nav-link.active{position:relative;background:silver}.nav-tabs .nav-item:not(:first-child) .nav-link.active{border-left:1px solid #5a5a5a}.nav-tabs .nav-item:first-child{border-left:2px solid #fff}.nav-tabs .nav-item .nav-link.active:after{content:'';display:block;width:100%;height:2px;position:absolute;left:0;bottom:-2px;background:silver}.nav-tabs .nav-link{border:0;padding:1rem}.modal-content{box-shadow:1px 1px 0 0 #424242;border:1px solid #fff;border-right-color:#848484;border-bottom-color:#848484;background:silver;padding:2px}.modal-header{height:32px;background:-webkit-linear-gradient(left,#08216b,#a5cef7)!important;color:#fff;padding:0 6px}.modal-header .btn{margin-top:5px;padding-bottom:10px;height:22px;width:22px}.modal-header .btn span{position:absolute;top:6px;right:14px}.modal-title{padding-top:2px;padding-bottom:1px}.modal-footer{padding:6px}.table{background:#fff;border-color:silver}.table-bordered,.table-bordered td,.table-bordered th{border:1px solid silver}.table td,.table th{padding:.75rem;vertical-align:top;border-top:1px solid silver}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="data.js"></script>
+    <script src="utils.js"></script>
+    <style>
+        .select2-results {
+            color:black;
+            /* background: #3ea211; */
+        }
+    </style>
+  </head>
+  <body  class="windows-scrollbar">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-95 ">
+        <a class="navbar-brand" href="#">FrameNet Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://en.wikipedia.org/wiki/FrameNet" target="_blank">What is this?</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">Explore Frames</h1>
+        <p class="lead w-80">A frame is a conceptual structure describing a situation, event, or entity. <br/>It includes participants and properties associated with that situation. Frames are like templates for understanding related concepts.        </p>
+    </div>
+
+    <div class="container">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Search</h4>
+            </div>
+            <div class="card-body">
+                <!-- Form to search for frames with single text input -->
+                <form>
+                    <div class="form-group">
+                        <label for="frame_search">Search for a Frame</label>
+                        <br/>
+                        
+                       
+
+
+
+
+                    
+                        <select class="js-example-basic-single form-control text-dark" id="frame_search" style="width: 100%;">
+                        </select>
+                        <!--checkboxes to search by frame name or lexical units side by side-->
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="search_by_name" checked>
+                            <label class="form-check label" for="search_by_name">Search by Frame Name</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" id="search_by_lexical_units" checked>
+                            <label class="form-check label" for="search_by_lexical_units">Search by Lexical Units</label>
+                        </div>
+                    </div>  
+                </form>
+
+                <div id="output">
+
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+    
+    <!-- Scripts -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            
+            // if there is a url fragment, set that to the value of the select2 dropdown if it exists
+            // for every key in frame_data, add the key to the select2 dropdown with the key as the key and "name" as the text
+            for (var key in frame_data) {
+                if (frame_data.hasOwnProperty(key)) {
+                    var newOption = new Option(frame_data[key].name, key, false, false);
+                    // make this option also searchable by any of the lexical units
+                    newOption.dataset.lexicalUnits = frame_data[key].lexUnit.map(x=>x[0]).join('|');
+                    $('.js-example-basic-single').append(newOption).trigger('change');
+                }
+            }
+
+            var searchByName = true;
+            var searchByLexicalUnits = true;
+            $('#search_by_name').change(function() {
+                searchByName = this.checked;
+
+            });
+            $('#search_by_lexical_units').change(function() {
+                searchByLexicalUnits = this.checked;
+            });
+
+            $('.js-example-basic-single').select2({
+                placeholder: 'Select a Frame',
+                allowClear: true,
+                matcher: function(params, data) {
+                    // If there are no search terms, return all of the data
+                    if ($.trim(params.term) === '') {
+                        return data;
+                    }
+
+                    // Do not display the item if there is no 'text' property
+                    if (typeof data.text === 'undefined') {
+                        return null;
+                    }
+
+                    if(searchByName){
+                        if (('_'+data.text).toUpperCase().indexOf('_'+params.term.toUpperCase()) > -1) {
+                            return data;
+                        }
+                    }
+
+                    // // check if the search term is the start of any of the lexical units
+                    if(searchByLexicalUnits){
+                        if (params.term.endsWith(' ')) {
+                            var truef = params.term.toUpperCase().substring(0, params.term.length-1)
+                            if (data.element.dataset.lexicalUnits && data.element.dataset.lexicalUnits.toUpperCase().split('|').indexOf(truef) > -1) {
+                                return data;
+                            }
+                        }else{
+                            if (data.element.dataset.lexicalUnits) {
+                                var lexUnits = data.element.dataset.lexicalUnits.split('|');
+                                for (var i = 0; i < lexUnits.length; i++) {
+                                    if (lexUnits[i].toUpperCase().indexOf(params.term.toUpperCase()) === 0) {
+                                        return data;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Return `null` if the term should not be displayed
+                    return null;
+                }
+            });
+
+
+            function openFrame(frameId){
+                var frame = frame_data[frameId];
+                $('#output').html(render_frame(frame));
+                window.location.hash = frameId;
+            }
+            if (window.location.hash) {
+                console.log(window.location.hash);
+                var hash = window.location.hash.substring(1);
+                $('.js-example-basic-single').val(hash).trigger('change');
+                openFrame(hash);
+            }
+
+            // when a frame is selected, show the frame's members
+            $('.js-example-basic-single').on('select2:select', function (e) {
+                var data = e.params.data;
+                openFrame(data.id);
+            });
+        });
+    
+    </script>
+  </body>
+</html>
