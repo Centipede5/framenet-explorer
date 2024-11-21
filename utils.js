@@ -30,6 +30,12 @@ function render_frame(frame){
 
         var name1 = `<a target="_blank" href="#${fr[3]}">${frame_data[fr[3]]['name']}</a>`;
         var name2 = `<a target="_blank" href="#${fr[4]}">${frame_data[fr[4]]['name']}</a>`;
+        // bold whichever one is us
+        if (fr[3] == frame['ID']) {
+            name1 = `<b>${name1}</b>`;
+        } else if (fr[4] == frame['ID']) {
+            name2 = `<b>${name2}</b>`;
+        }
 
         output += `<li><b>${fr[0]}</b>: (${fr[1]} ${name1}) -> (${fr[2]} ${name2}) </li>`;
     }
